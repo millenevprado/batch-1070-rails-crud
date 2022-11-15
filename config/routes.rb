@@ -17,5 +17,8 @@ Rails.application.routes.draw do
   # DELETE a restaurant
   delete 'restaurants/:id', to: 'restaurants#destroy'
 
+  # resources - atalho pra escrever as 7 rotas do CRUD
+  # resources :restaurants
+  # resources :restaurants, only: [:index, :show]
   # resources :restaurants, except: [:destroy]
 end
